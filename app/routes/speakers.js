@@ -29,6 +29,7 @@ router.get('/speakers/:speakerid', function(req, res) {
       <h2>with ${speaker.name}</h2>
       <img src="/images/speakers/${speaker.shortname}_tn.jpg" alt="speaker">
       <p>${speaker.summary}</p>
+      <script src="/reload/reload.js"></script>
   `);
 });
 
