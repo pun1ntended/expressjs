@@ -1,12 +1,26 @@
-var express = require('express');
-var app = express();
+const express = require('express'),
+      app     = express(),
+      data    = require('./data/data.json');
+
+app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res) {
-  res.send('<h1>Roux Academy Meetups</h1>');
+  let info = "";
+  data.speakers.forEach((speaker) => {
+    info += `
+    <li>
+        <h2>${speaker.name}</h2>
+        <p>${speaker.summary}</p>
+    </li>`
+  })
+  res.send(`
+            <h1>Roux Academy Meetups</h1>
+            ${info}
+   `);
 });
 
-var server = app.listen(3000, function() {
-  console.log('Listening on port 3000');
+var server = app.listen(app.get('port'), function() {
+  console.log(`Listening on port ${app.get('port')}`);
 });
 
 // var http = require('http');
