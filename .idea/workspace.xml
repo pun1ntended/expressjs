@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a6b70c22-8ce9-4ccc-86ba-65f1e4099f89" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/partials/content/speakerslist.ejs" afterPath="$PROJECT_DIR$/app/views/partials/content/speakerslist.ejs" />
     </list>
     <ignored path="Node_and_express.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -407,7 +406,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2281000" />
+    <option name="totallyTimeSpent" value="2505000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
