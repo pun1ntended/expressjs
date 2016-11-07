@@ -1,6 +1,15 @@
 $(function() {
   $.getJSON('api', updateFeedback);
 
+  $('.feedback-form').submit((e) => {
+    e.preventDefault();
+    $.post('api', {
+      name: $('#feedback-form-name').val(),
+      name: $('#feedback-form-title').val(),
+      name: $('#feedback-form-message').val()
+    }, updateFeedback);
+  });
+
   function updateFeedback(data) {
    var output = '';
    $.each(data,function(key, item) {
